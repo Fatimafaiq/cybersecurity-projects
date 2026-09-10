@@ -1,0 +1,17 @@
+From: IT Support <support@micros0ft-security.example>
+To: employee@company.example
+Subject: URGENT: Your Microsoft 365 Account Will Be Suspended
+
+Dear Employee,
+
+We detected unusual activity on your Microsoft 365 account.
+
+Your account will be suspended within 24 hours unless you verify your identity immediately.
+
+Verify Account:
+https://microsoft-login-security.example/verify
+
+Failure to verify your account may result in permanent loss of access.
+
+Regards,
+Microsoft 365 Security Team

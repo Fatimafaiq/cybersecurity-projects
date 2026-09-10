@@ -1,0 +1,34 @@
+PROJECT 9 - PHISHING EMAIL ANALYSIS
+
+Indicators Identified:
+
+1. Suspicious Sender Domain
+   support@micros0ft-security.example
+
+   The domain uses "micros0ft" with the number 0 instead of
+   the letter "o", indicating a lookalike domain.
+
+2. Suspicious URL
+   https://microsoft-login-security.example/verify
+
+   The URL does not use Microsoft's legitimate domain.
+
+3. Urgency
+   The subject contains "URGENT" and threatens account
+   suspension within 24 hours.
+
+4. Social Engineering
+   The recipient is pressured to verify their identity
+   immediately.
+
+5. Threatening Language
+   The email claims failure to verify could result in
+   permanent loss of account access.
+
+ASSESSMENT:
+The email contains multiple phishing indicators and should
+be treated as malicious/suspicious.
+
+RECOMMENDED ACTION:
+Do not click the link or enter credentials. Report the email
+to the security/SOC team and investigate the sender and URL.
