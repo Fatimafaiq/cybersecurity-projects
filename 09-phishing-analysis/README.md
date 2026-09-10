@@ -154,9 +154,9 @@ This demonstrates how investigation findings can be converted into detection log
 
 The simulated activity maps to:
 
-**T1566 – Phishing**
+**T1566 - Phishing**
 
-**T1566.002 – Spearphishing Link**
+**T1566.002 - Spearphishing Link**
 
 Tactic:
 
