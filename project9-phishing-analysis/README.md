@@ -1,4 +1,4 @@
-# Project 9 – Phishing Email Analysis
+# 09-Phishing-Email-Analysis
 
 ## Objective
 Analyze a simulated phishing email and identify indicators of phishing and social engineering.
