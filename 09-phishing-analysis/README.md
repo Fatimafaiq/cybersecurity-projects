@@ -1,4 +1,4 @@
-# Project 09 – Phishing Email Analysis & Detection
+# Project 09 - Phishing Email Analysis & Detection
 
 ## Overview
 
