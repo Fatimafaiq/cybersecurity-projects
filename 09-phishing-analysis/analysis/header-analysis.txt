@@ -1,0 +1,124 @@
+PHISHING EMAIL HEADER ANALYSIS
+==============================
+
+1. Sender Analysis
+------------------
+Display Name: Microsoft Security
+Sender Domain: micros0ft-support.example
+
+Finding:
+The sender attempts to impersonate Microsoft by replacing the letter "o"
+with the number "0" in "micros0ft". This is a lookalike-domain technique
+commonly associated with phishing and brand impersonation.
+
+Risk: HIGH
+
+
+2. Return-Path Analysis
+-----------------------
+Return-Path: alerts@micros0ft-support.example
+
+Finding:
+The Return-Path uses the same suspicious lookalike domain. The domain is
+not a legitimate Microsoft domain and should not be trusted.
+
+Risk: HIGH
+
+
+3. SPF Analysis
+---------------
+Result: FAIL
+
+Finding:
+The Authentication-Results header reports spf=fail. This indicates that
+the sending infrastructure was not authorized by the domain's SPF policy
+for this message.
+
+Risk: HIGH
+
+
+4. DKIM Analysis
+----------------
+Result: NONE
+
+Finding:
+No DKIM signature is present. Therefore, DKIM does not provide
+cryptographic verification of the sender domain or message integrity.
+
+Risk: MEDIUM
+
+
+5. DMARC Analysis
+-----------------
+Result: FAIL
+
+Finding:
+DMARC failed. Combined with the SPF failure and absence of DKIM
+authentication, this significantly reduces confidence in the claimed
+sender identity.
+
+Risk: HIGH
+
+
+6. Received Header Analysis
+---------------------------
+Source IP: 192.0.2.55
+Sending Host: mail.micros0ft-support.example
+
+Finding:
+The message originated from infrastructure associated with the suspicious
+lookalike domain. In this laboratory sample, 192.0.2.55 is a documentation
+address and does not represent a real malicious host.
+
+Risk: SUSPICIOUS
+
+
+7. Social Engineering Indicators
+--------------------------------
+Subject: Urgent: Account Verification Required
+
+Indicators:
+- Urgency
+- Account/security-themed pretext
+- Brand impersonation
+- Lookalike domain
+- Pressure to perform account verification
+
+These characteristics are consistent with credential-phishing techniques.
+
+
+8. IOC Summary
+--------------
+Suspicious Domain:
+micros0ft-support.example
+
+Suspicious Host:
+mail.micros0ft-support.example
+
+Source IP (Lab):
+192.0.2.55
+
+Authentication Findings:
+SPF: FAIL
+DKIM: NONE
+DMARC: FAIL
+
+
+9. Final Assessment
+-------------------
+Classification: PHISHING
+Severity: HIGH
+
+The email demonstrates multiple phishing indicators, including a lookalike
+sender domain, authentication failures, brand impersonation, and urgency-
+based social engineering.
+
+Recommended SOC Actions:
+- Quarantine the message.
+- Search the mail environment for similar sender/domain indicators.
+- Block confirmed malicious indicators where appropriate.
+- Determine whether other recipients received the campaign.
+- Investigate user interaction with URLs or attachments.
+- Reset credentials if credential compromise is confirmed.
+- Document and escalate the incident according to the organization's
+  incident-response procedure.

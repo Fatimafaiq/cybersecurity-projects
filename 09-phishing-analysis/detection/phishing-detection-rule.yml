@@ -1,0 +1,34 @@
+title: Suspicious Lookalike Domain Phishing Email
+id: 6d35e9a1-6e53-4c8c-9c20-9d84b22a9301
+status: experimental
+description: >
+  Detects the synthetic phishing scenario used in this lab by identifying
+  messages associated with the micros0ft-support.example lookalike domain.
+
+author: Fatima Faiq
+date: 2026-09-10
+
+logsource:
+  category: email
+
+detection:
+  selection_sender:
+    sender|contains:
+      - 'micros0ft-support.example'
+
+  selection_subject:
+    subject|contains:
+      - 'Account Verification'
+      - 'Urgent'
+
+  condition: selection_sender and selection_subject
+
+falsepositives:
+  - Authorized phishing simulations using matching test indicators
+
+level: high
+
+tags:
+  - attack.initial-access
+  - attack.t1566
+  - attack.t1566.002

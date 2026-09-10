@@ -1,0 +1,17 @@
+From: Microsoft Security <security@micros0ft-support.example>
+To: employee@example.com
+Subject: Urgent: Account Verification Required
+Date: Wed, 09 Sep 2026 10:32:14 +0400
+Message-ID: <20260909103214.48291@micros0ft-support.example>
+Return-Path: <alerts@micros0ft-support.example>
+
+Received: from mail.micros0ft-support.example (192.0.2.55)
+        by mail.example.com with ESMTP;
+        Wed, 09 Sep 2026 10:32:18 +0400
+
+Authentication-Results: mail.example.com;
+        spf=fail smtp.mailfrom=micros0ft-support.example;
+        dkim=none;
+        dmarc=fail header.from=micros0ft-support.example
+
+Content-Type: text/html; charset=UTF-8
