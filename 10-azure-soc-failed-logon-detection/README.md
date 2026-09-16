@@ -88,7 +88,7 @@ I created an Azure Workbook containing:
 
 This provides a central dashboard for reviewing Windows authentication activity and investigating suspicious logon behavior.
 
-### Failed Logon Investigation — Event ID 4625
+### Failed Logon Investigation - Event ID 4625
 
 The following query results show the failed Windows authentication events collected from the monitored Azure VM.
 
