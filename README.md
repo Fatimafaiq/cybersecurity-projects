@@ -14,12 +14,14 @@ Hands-on cybersecurity projects covering network security, defensive monitoring,
 | 06 | [Nmap Reconnaissance](./06-nmap-reconnaissance) | Network security - host/service discovery using Nmap |
 | 07 | [Nmap Vulnerability Assessment](./07-nmap-vulnerability-assessment) | Vulnerability assessment - identifies known weaknesses via Nmap scripts |
 | 08 | [Metasploit Exploitation Lab](./08-metasploit-exploitation-lab) | Offensive security - controlled exploitation lab using Metasploit Framework |
+| 09 | [Phishing Email Analysis & Detection](./09-phishing-analysis) | Email security - analyzes phishing indicators and suspicious email characteristics |
+| 10 | [Azure Windows Security Event Monitoring & Failed Logon Detection](./10-azure-soc-failed-logon-detection) | Cloud security / SOC monitoring - analyzes Windows authentication events using Azure Log Analytics, KQL, and Workbooks |
 
 ## Tools & Skills
 
-- **Languages:** Python
-- **Tools:** Nmap, Metasploit Framework, Wireshark
-- **Concepts:** Network security, vulnerability assessment, defensive monitoring, log analysis, cryptography, password security
+- **Languages:** Python, KQL
+- **Tools:** Nmap, Metasploit Framework, Wireshark, Microsoft Azure, Azure Log Analytics, Azure Monitor, Azure Workbooks
+- **Concepts:** Network security, vulnerability assessment, defensive monitoring, log analysis, authentication monitoring, security event investigation, threshold-based detection, cryptography, password security
 
 ## About
 
