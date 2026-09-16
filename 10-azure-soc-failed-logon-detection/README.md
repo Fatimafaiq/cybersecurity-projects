@@ -44,11 +44,11 @@ Azure Workbook Dashboard
 
 ## Windows Events Investigated
 
-### Event ID 4624 — Successful Logon
+### Event ID 4624 - Successful Logon
 
 Event ID 4624 records successful Windows authentication activity. I used KQL to analyze successful logons and visualize authentication activity over time.
 
-### Event ID 4625 — Failed Logon
+### Event ID 4625 - Failed Logon
 
 Event ID 4625 records failed Windows authentication attempts.
 
