@@ -1,0 +1,7 @@
+// Successful Windows logons - Event ID 4624
+
+Event
+| where EventLog == "Security"
+| where EventID == 4624
+| summarize SuccessfulLogons=count() by bin(TimeGenerated, 5m)
+| order by TimeGenerated asc
