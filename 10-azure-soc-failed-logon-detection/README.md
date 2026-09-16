@@ -88,6 +88,18 @@ I created an Azure Workbook containing:
 
 This provides a central dashboard for reviewing Windows authentication activity and investigating suspicious logon behavior.
 
+### Failed Logon Investigation — Event ID 4625
+
+The following query results show the failed Windows authentication events collected from the monitored Azure VM.
+
+![Failed Logon Events - Event ID 4625](failed-logon-events-4625.png)
+
+### Azure SOC Workbook Dashboard
+
+The completed workbook visualizes failed and successful authentication activity and provides recent failed-logon events for investigation.
+
+![Azure SOC Workbook Dashboard](soc-workbook-dashboard.png)
+
 ## Skills Demonstrated
 
 - Windows Security Event monitoring
